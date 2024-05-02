@@ -1,15 +1,26 @@
+
 button{
     padding: 0.7rem 1.4rem;
-    background-color: var(--font2);
     outline: none;
+    transition: 0.4s;
+    font-family: var(--poppins);
+    /* border-radius: 30px; */
+}
+.norm_button{
+    background-color: var(--font2);
     border: none;
     color: var(--font1);
-    font-family: var(--poppins);
     font-weight: bold;
-    transition: 0.4s;
 }
 
-button:hover{
+.out_button{
+    padding: 0.7rem 1.4rem;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--font2);
+    color: var(--font2);
+}
+.norm_button:hover{
     background: #ffffffc8 ;
 }
 button:active{

@@ -1,0 +1,9 @@
+:root{
+    --size : 30px;
+}
+.menu-key{
+    width: var(--size);
+    height: var(--size);
+    display: none;
+    overflow: hidden;
+}

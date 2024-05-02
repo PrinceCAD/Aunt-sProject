@@ -1,6 +1,6 @@
 :root{
     --main:red;
-    --sec:red;
+    --sec:rgb(255, 255, 255);
     --third:rgb(255, 255, 255);
 
     --font1:rgb(0, 0, 0);
