@@ -1,0 +1,95 @@
+#Home {
+  height: 100vh;
+  position: relative; /* Needed for proper positioning of pseudo-element */
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.465),rgba(0, 0, 0, 0.412)), url(../imgs/pexels-nout-gons-80280-378570.jpg);
+  background-position: center;
+  overflow: hidden;
+}
+
+
+.main-message .container{
+    transform: translateY(30%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-message .container .main{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.main-message .container h1{
+    font-family: var(--poppins);
+    font-size: 100px;
+    text-wrap: wrap;
+    font-weight: 800;
+    line-height: 90%;
+    cursor: pointer;
+    
+    color: var(--font2);
+}
+.main-message .container .HomeSplit{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    overflow: hidden;
+    transform: translateX(5%);
+}
+.main-message .container .HomeSplit>div{
+    height: 100%;
+}
+:root{
+    --messagesHomeTrans:0.4s;
+}
+.main-message .container .story-trans{
+    width: 90%;
+    transition: var(--messagesHomeTrans);
+}
+
+.main-message .container .story-trans>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--poppins);
+    line-height: 130%;
+    color: var(--font2);
+    padding: 1rem;
+}
+.main-message .container .HomeSplit .Hometabs{
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    justify-content: center;
+}
+
+:root{
+    --click-size: 8px;
+}
+.main-message .container .HomeSplit .Hometabs .click{
+    border: 2px solid #fff;
+    border-radius: 100%;
+    width: var(--click-size);
+    height: var(--click-size);
+    cursor: pointer;
+    transition: var(--messagesHomeTrans);
+}
+
+.main-message .container .HomeSplit .Hometabs .click:hover{
+    scale: 1.4;
+}
+.home_button{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
