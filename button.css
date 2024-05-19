@@ -13,6 +13,14 @@ button{
     font-weight: bold;
 }
 
+.colored{
+    background-color: var(--third);
+    border: none;
+    color: var(--font2);
+    font-weight: 400;
+    border-radius: 30px;
+}
+
 .out_button{
     padding: 0.7rem 1.4rem;
     background-color: transparent;

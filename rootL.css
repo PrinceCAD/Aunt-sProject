@@ -1,11 +1,12 @@
 :root{
     --main:red;
     --sec:rgb(255, 255, 255);
-    --third:rgb(255, 255, 255);
+    --third:rgb(20, 46, 62);
+    --fainted: #fff3eb;
 
-    --font1:rgb(0, 0, 0);
+    --font1:rgb(49, 49, 49);
     --font2:rgb(255, 255, 255);
-    --font3:red;
+    --font3:rgba(220, 220, 220, 0.821);
 
     --fontSpecial:rgb(28, 28, 28);
     --Special:rgb(238, 238, 238);

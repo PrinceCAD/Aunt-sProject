@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./anim.css">
     
     <link rel="stylesheet" href="./sections/home.css">
+    <link rel="stylesheet" href="./sections/contact.css">
     <link rel="stylesheet" href="./button.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +29,12 @@
         <div class="heading" id="bar">
             <div class="container">
                 <div class="logo">
-                    <img id="Logo" src="./logos/light.png" alt="" height="60px">
+                    <a href="#">
+                        <div id="shift_logo">
+                            <img id="Logo" src="./logos/light.png" alt="" height="60px">
+                            <img id="Logo" src="./logos/dark.png" alt="" height="60px">
+                        </div>
+                    </a>
                 </div>
                 <div class="links">
                     <ul>
@@ -37,6 +43,10 @@
                         <li><a class="nav-link" href="#Services">Services <div class="slide"></div></a></li>
                         <li><a class="nav-link" href="#InsurancePolicy">Insurance Policy <div class="slide"></div></a></li>
                         <li><a class="nav-link" href="#Contact" id="screen">Contact <div class="slide"></div></a></li>
+                        <li><div class="background-shift" id="sec_nav_button"> 
+                                <div id="background_left"></div>
+                                <div id="background_right"></div>
+                            </div></li>
                     </ul>
                 </div>
                 <div class="menu-key">
@@ -68,8 +78,8 @@
 
                     
                     <div class="home_button">
-                        <button class="norm_button">See About</button>
-                        <button class="out_button">Contact Us ?? </button>
+                        <a href="#About"><button class="norm_button">See About</button></a>
+                        <a href="#Contact"><button class="out_button">Contact Us </button></a>
                     </div>
                 </div>
             </div>
@@ -81,13 +91,81 @@
     <section id="About">
         <div class="container">
             <div class="left">
-                <!-- <h1>What Are We About ?</h1> -->
             </div>
             <div class="right"></div>
         </div>
     </section>
     <section id="Services"></section>
     <section id="InsurancePolicy"></section>
-    <section id="Contact"></section>
+
+    <section id="Contact">
+        <div class="container">
+            <div class="left">
+                    <form action="post">
+                        <div class="names ">
+                            <div class="input">
+                                <label for="First Name">First name</label>
+                                <input type="text">
+                            </div>
+
+                            <div class="input">
+                                <label for="Last Name">Last name</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="Email *">Email *</label>
+                            <input type="email" placeholder="Someone@gmail.com">
+                        </div>
+                        <div class="input">
+                            <label for="name"></label>
+                            <textarea type="text" placeholder="Enter your message"></textarea>
+                        </div>
+                        <button class="colored">Submit</button>
+                    </form>
+                </div>
+            <div class="right">
+                <div class="contents">
+                    <div class="toprow">
+                        <h2>Contact me</h2>
+                        <p><i>Fill the form and submit to get your message to my google mail</i> ...<br>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae itaque exercitationem quae facere harum neque molestias sunt? Facere odio, enim atque perferendis nemo quibusdam doloremque excepturi sint possimus. Dignissimos, ab.
+                        </p>
+                    </div>
+                    <div class="bottomrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            
+            <div class="footerleft">
+                
+            </div>
+            <div class="footerright">
+                <div class="link">
+                    <a href="">
+                        <img class="icon" src="./icons/facebook.svg" alt=""">
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <img class="icon" src="./icons/instagram.svg" alt="">
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <img class="icon" src="./icons/linkedin.svg" alt="">
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="">
+                        <img class="icon" src="./icons/whatsapp.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
