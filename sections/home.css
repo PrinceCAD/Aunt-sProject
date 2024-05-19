@@ -1,8 +1,9 @@
 #Home {
   height: 100vh;
-  position: relative; /* Needed for proper positioning of pseudo-element */
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.465),rgba(0, 0, 0, 0.412)), url(../imgs/pexels-nout-gons-80280-378570.jpg);
+  position: relative;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.718),rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.593)), var(--bgp);
   background-position: center;
+  
   overflow: hidden;
 }
 
@@ -30,6 +31,7 @@
     line-height: 90%;
     cursor: pointer;
     
+    
     color: var(--font2);
 }
 .main-message .container .HomeSplit{
@@ -50,6 +52,7 @@
 .main-message .container .story-trans{
     width: 90%;
     transition: var(--messagesHomeTrans);
+    
 }
 
 .main-message .container .story-trans>div{
@@ -60,8 +63,9 @@
     height: 100%;
 
     font-family: var(--poppins);
-    line-height: 130%;
-    color: var(--font2);
+    font-weight: 200;
+    line-height: 170%;
+    color: var(--font3);
     padding: 1rem;
 }
 .main-message .container .HomeSplit .Hometabs{
@@ -77,7 +81,7 @@
     --click-size: 8px;
 }
 .main-message .container .HomeSplit .Hometabs .click{
-    border: 2px solid #fff;
+    border: 2px solid var(--font2);
     border-radius: 100%;
     width: var(--click-size);
     height: var(--click-size);
